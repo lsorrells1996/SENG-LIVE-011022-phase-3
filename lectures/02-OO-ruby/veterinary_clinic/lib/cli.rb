@@ -50,7 +50,7 @@ def menu
         $clinics.each { |clinic| clinic }
         menu
     when "1"
-        Patient.all.each { |patient| puts patient[:name] }
+        Patient.all.each { |patient| puts patient.name }
         menu
     when "0"
         puts "Goodbye!"
